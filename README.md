@@ -1,4 +1,4 @@
-<img width="475" height="461" alt="image" src="https://github.com/user-attachments/assets/52c141a7-94da-4734-8055-cfeac005ea97" />
+<img width="1024" height="1536" alt="ChatGPT Image Aug 9, 2025, 04_01_26 PM" src="https://github.com/user-attachments/assets/d91984b7-60cf-4a99-aa12-501fb8cb1b60" />
 
 Things With Feelings 
 
@@ -54,20 +54,33 @@ start index.html       # Windows
 Project Documentation
 
 Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name) Add caption explaining what this shows
+<img width="788" height="607" alt="1" src="https://github.com/user-attachments/assets/d5fc5ce6-1987-4b26-a208-df47cd9f5482" />
+Main Menu of Things With Feelings App
+The landing page showcasing four playful modules: Apology Division, Compatibility Bureau, Object’s Secret Wishlist, and Reverse Apology, inviting users to interact with everyday objects emotionally.
 
-![Screenshot2](Add screenshot 2 here with proper name) Add caption explaining what this shows
+<img width="673" height="598" alt="2" src="https://github.com/user-attachments/assets/9ddb3776-b937-4dae-96ab-53e7c1516d76" />
+Apology Generator Interface
+A user inputs an object and a reason for apology to generate a heartfelt apology letter from the user to the object.
 
-![Screenshot3](Add screenshot 3 here with proper name) Add caption explaining what this shows
+<img width="691" height="608" alt="3" src="https://github.com/user-attachments/assets/390e4a55-cd09-412c-a249-604579e7bd80" />
+Compatibility Bureau Result Screen
+Displays the compatibility percentage between two objects along with a colorful pie chart highlighting quirky reasons behind their compatibility score.
+
+<img width="649" height="568" alt="4" src="https://github.com/user-attachments/assets/64e23bef-2cb0-41c5-9bad-9ffc2f61ce7d" />
+Object's Secret Wishlist Reveal
+After entering an object’s name, the app reveals its secret wish in a charming, poetic sentence, emphasizing the emotional personality attributed to the object.
+
+
 
 Diagrams
-![Workflow](Add your workflow/architecture diagram here) Add caption explaining your workflow
-
+<img width="1580" height="980" alt="image" src="https://github.com/user-attachments/assets/4f76ad36-ab9c-4356-a64e-8bd70d94d227" />
+It visually shows the flow:
+User → Feature Select → Input Objects → JS Logic → Output Display, with an extra branch to Extras (local storage).
 
 Project Demo
 Video
-[Add your demo video link here] Explain what the video demonstrates
-
+https://github.com/user-attachments/assets/095f1a82-f373-452a-a8f3-242cf8a5cdeb
+This short demo walks you through the project in action, showing how its features come together in a smooth, easy-to-use interface. You’ll see the main functions being used step-by-step, with results updating instantly on screen. It’s a quick way to get a feel for what the project does—no code required.
 
 Team Contributions
 Anjana Krishna V: HTML,CSS
