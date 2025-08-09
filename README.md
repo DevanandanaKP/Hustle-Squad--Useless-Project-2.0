@@ -1,11 +1,15 @@
 <img width="3188" height="1202" alt="image" src="https://github.com/user-attachments/assets/6c9a205d-b6a1-406a-b7a1-24d7f9a0ed09" />
 
 Things With Feelings 
+
 Basic Details
+
 Team Name: Hustle Squad
+
 Team Members
 Team Lead: Devanandana K P - Cochin University College of Engineering Kuttanad
 Member 2: Anjana Krishna V - Cochin University College of Engineering Kuttanad
+
 
 Project Description
 [2-3 lines about what your project does]
