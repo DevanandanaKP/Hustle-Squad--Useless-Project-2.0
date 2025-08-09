@@ -53,7 +53,8 @@ start index.html       # Windows
 
 Project Documentation
 
-Screenshots (Add at least 3)
+Screenshots
+
 <img width="788" height="607" alt="1" src="https://github.com/user-attachments/assets/d5fc5ce6-1987-4b26-a208-df47cd9f5482" />
 Main Menu of Things With Feelings App
 The landing page showcasing four playful modules: Apology Division, Compatibility Bureau, Object’s Secret Wishlist, and Reverse Apology, inviting users to interact with everyday objects emotionally.
