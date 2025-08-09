@@ -1,0 +1,272 @@
+/* --- Reset & Base --- */
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e9d5f1, #d0f0e9);
+  color: #3a3a3a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem 4rem;
+  user-select: none;
+  line-height: 1.55;
+}
+
+/* Main container */
+main#app {
+  background: #fff;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 3rem 3rem 4rem;
+  box-shadow: 0 10px 25px rgba(102, 51, 153, 0.12);
+  color: #3a3a3a;
+  text-align: center;
+  letter-spacing: 0.03em;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Handwritten style heading */
+h1, h2 {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, 'Segoe UI';
+  font-weight: 700;
+  color: #4a2f7c;
+  text-shadow: 1px 1px 3px rgba(168, 109, 237, 0.3);
+  margin-bottom: 2rem;
+  user-select: text;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Buttons */
+button {
+  background: #ea7a81;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(234, 122, 129, 0.6);
+  transition: background 0.35s ease, transform 0.25s ease;
+  letter-spacing: 0.04em;
+  margin: 1rem auto 0.8rem;
+  min-width: 120px;
+  display: inline-block;
+  user-select: none;
+}
+
+button:hover {
+  background: #d25f67;
+  box-shadow: 0 6px 16px rgba(210, 95, 103, 0.8);
+  transform: translateY(-2px);
+}
+
+button:active {
+  background: #aa494f;
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* Back button */
+.back-btn {
+  background: #a49db9;
+  padding: 0.4rem 1.2rem;
+  min-width: 90px;
+  margin-top: 1.5rem;
+  box-shadow: 0 3px 8px rgba(164, 157, 185, 0.6);
+  font-size: 0.9rem;
+}
+
+.back-btn:hover {
+  background: #8f88b0;
+}
+
+/* Inputs */
+input[type="text"], input[type="search"] {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  border: 3px solid #a56cff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5b3db3;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ede3ff, #d8caff);
+  box-shadow: 0 5px 15px rgba(165, 108, 255, 0.45);
+  transition: border-color 0.3s ease, box-shadow 0.4s ease, background 0.5s ease, transform 0.3s ease;
+  user-select: text;
+}
+
+input[type="text"]::placeholder,
+input[type="search"]::placeholder {
+  color: #9a85ff;
+  font-style: italic;
+  font-weight: 600;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus {
+  outline: none;
+  border-color: #7b57ff;
+  background: #f1eaff;
+  box-shadow: 0 8px 25px rgba(123, 87, 255, 0.7);
+  transform: scale(1.02);
+}
+
+/* Output area */
+#output {
+  width:100%;
+  max-width: 500px;
+  background: #f6edfa;
+  border: 2px solid #cba9f8;
+  border-radius: 20px;
+  padding: 0.4rem;  /* smaller padding */
+  margin-top: 0.02rem;      /* reduced margin top */
+  min-height: auto;  
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5e3f8f;
+  box-shadow: inset 0 2px 10px rgba(185, 149, 242, 0.3);
+  
+  user-select: text;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  font-style: normal;
+  transition: transform 0.4s ease;
+}
+
+#output p, #output strong {
+  margin-bottom: 0.3rem 0; /* smaller bottom margin */
+  line-height: 1.3;
+}
+
+/* Output pulse animation on new content */
+#output.new-output {
+  animation: pulseGlow 1.6s ease forwards;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: inset 0 0 0 #cba9f8; transform: scale(1); }
+  50% { box-shadow: inset 0 0 12px #cba9f8; transform: scale(1.02); }
+  100% { box-shadow: inset 0 2px 10px #cba9f8; transform: scale(1); }
+}
+
+/* Emphasis text */
+.emphasis {
+  font-style: italic;
+  color: #7d6d9f;
+  margin-top: 1rem;
+  display: block;
+  user-select: text;
+}
+
+/* SVG and pie charts */
+svg {
+  margin: 0.4rem auto 0; /* reduce top margin */
+  max-width: 170px;
+  border-radius: 14px;
+  filter: drop-shadow(0 2px 6px rgba(131, 68, 212, 0.2));
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+svg:hover {
+  transform: scale(1.1);
+}
+
+/* Factor list styling */
+#output ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4e3a85;
+}
+
+#output ul li {
+  margin-bottom: 0.8rem;
+}
+
+/* Landing page buttons container */
+#app > div > button {
+  margin-bottom: 1.4rem;
+  min-width: 140px;
+  font-family: 'Comic Sans MS', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(234, 122, 129, 0.7);
+  transition: background-color 0.3s ease, transform 0.25s ease;
+  user-select: none;
+  text-shadow: 0 1px 2px #b993b9;
+}
+
+#app > div > button:hover {
+  background: #d25f67;
+  transform: translateY(-4px);
+  box-shadow: 0 9px 26px rgba(210, 95, 103, 0.85);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  main#app {
+    padding: 2.5rem 1.8rem 3rem;
+    border-radius: 20px;
+  }
+
+  button, #app > div > button {
+    min-width: 100%;
+  }
+}
+
+/* Toast notification style at top center */
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f0e68c;
+  color: #5a4d00;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 1000;
+}
+
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#output:empty {
+  display: none;
+  margin-top: 0;
+  min-height: 0;
+  padding: 0;
+}
